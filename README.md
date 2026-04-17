@@ -48,6 +48,14 @@ O sistema centraliza o cadastro de escolas e turmas, substituindo o uso de plani
 - ESLint
 - Prettier
 
+## Testes
+
+- Jest – framework de testes principal
+- jest-expo – integração do Jest com o ambiente Expo
+- @testing-library/react-native – utilitários para testes de componentes React Native
+- react-test-renderer – renderização de componentes para testes
+- @types/jest – tipagens TypeScript para Jest
+
 ---
 
 # Arquitetura
@@ -194,6 +202,18 @@ Gerencia:
 
 ---
 
+# Testes
+
+- escolaStore.test.ts → testes do Zustand (estado global)
+- escolasService.test.ts → testes de API (fetch mockado)
+- turmasService.test.ts → testes de API de turmas
+
+## Rodar os testes
+
+`npm test`
+
+---
+
 # Como rodar o projeto
 
 1. Instale dependências:
@@ -216,9 +236,9 @@ UX consistente e responsiva
 ---
 
 # Melhorias futuras
-Skeleton loading
-Paginação
-Testes automatizados
-Sync offline → online real
+
+- loading
+- Paginação
+- Sync offline → online real
 
 ---
